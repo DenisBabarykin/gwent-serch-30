@@ -54,17 +54,16 @@ var custom_decks = [
 			["ne_bribery", 1],
 			["ne_moorvran", 1],
 			["ne_fringilla", 1],
-			["ne_young_emissary_1", 3],
+			["ne_young_emissary_1", 4],
 			["ne_cahir", 1],
 			["ne_stefan", 1],
 			["ne_usurper", 1],
-			["ne_cantarella", 1],
+			["ne_fake_ciri", 1],
 			["ne_assire", 1],
 			["ne_treason", 1],
 			["ne_peter_saar_gwynleve", 1],
 			["ne_xarthisius", 1],
-			["ne_impera_enforcers", 1],
-			["ne_imperial_diviner", 1],
+			["ne_menno", 1],
 			["ne_renuald", 1]
 		]
 	}

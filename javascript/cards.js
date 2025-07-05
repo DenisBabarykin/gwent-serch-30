@@ -557,14 +557,14 @@ var default_cards = {
         "quote": "Fuck off! We aren't all ploughin' philanderers. Some of us have depth..."
     },
     "nr_sabrina": {
-        "name": "Сабрина Суккулентиг",
+        "name": "Сабрина Глевиссиг",
         "deck": "realms",
         "row": "ranged",
         "strength": "6",
         "ability": "",
         "filename": "sabrina",
         "count": "1",
-        "quote": "Сейчас как натравлю на тебя хорьков!"
+        "quote": "Она родилась недоношенной"
     },
     "nr_vernon": {
         "name": "Vernon Roche",
@@ -640,7 +640,7 @@ var default_cards = {
         "name": "Фофусирэ вар Анагыд",
         "deck": "nilfgaard",
         "row": "ranged",
-        "strength": "7",
+        "strength": "11",
         "ability": "",
         "filename": "assire",
         "count": "1",
@@ -710,7 +710,7 @@ var default_cards = {
         "name": "Мавылья Виго",
         "deck": "nilfgaard",
         "row": "ranged",
-        "strength": "7",
+        "strength": "9",
         "ability": "",
         "filename": "fringilla",
         "count": "1",
@@ -778,21 +778,21 @@ var default_cards = {
         "name": "Света из Гулеты",
         "deck": "nilfgaard",
         "row": "close",
-        "strength": "11",
+        "strength": "14",
         "ability": "hero",
         "filename": "letho",
         "count": "1",
         "quote": "Я уважаю только силу."
     },
     "ne_menno": {
-        "name": "Menno Coehoorn",
+        "name": "Ченьчо Коегоорн",
         "deck": "nilfgaard",
         "row": "close",
-        "strength": "10",
-        "ability": "hero medic",
+        "strength": "16",
+        "ability": "medic",
         "filename": "menno",
         "count": "1",
-        "quote": "I'll take an attentive reconnaissance unit over a fine cavalry brigade any day."
+        "quote": "А кто говорил, что будет легко?"
     },
     "ne_morteisen": {
         "name": "Morteisen",
@@ -812,7 +812,7 @@ var default_cards = {
         "ability": "hero",
         "filename": "moorvran",
         "count": "1",
-        "quote": "Нельзя так просто взять и не поменять чашечку"
+        "quote": "Нельзя так просто взять и не поменять чашечку!"
     },
     "ne_nauzicaa_1": {
         "name": "Nausicaa Cavalry Rider",
@@ -874,7 +874,7 @@ var default_cards = {
         "name": "Илиальд аэп Матсен",
         "deck": "nilfgaard",
         "row": "close",
-        "strength": "5",
+        "strength": "9",
         "ability": "morale",
         "filename": "renuald",
         "count": "1",
@@ -924,7 +924,7 @@ var default_cards = {
         "name": "Стемфан Скеллен",
         "deck": "nilfgaard",
         "row": "close",
-        "strength": "9",
+        "strength": "13",
         "ability": "spy",
         "filename": "stefan",
         "count": "1",
@@ -988,7 +988,7 @@ var default_cards = {
         "strength": "5",
         "ability": "bond",
         "filename": "young_emissary_1",
-        "count": "3",
+        "count": "4",
         "target": "ne_young_emissary",
         "quote": "Хе-хе, я тоже умею прокидывать!"
     },
@@ -3770,14 +3770,14 @@ var ext_ne_cards = {
         "quote": "O Great Sun which dost in Heavens fly, save us from the lice which do so stubbornly infest our bloomers. "
     },
     "ne_fake_ciri": {
-        "name": "Fake Ciri",
+        "name": "Фейковый братан",
         "deck": "nilfgaard",
         "row": "ranged",
         "strength": "2",
-        "ability": "",
+        "ability": "spy",
         "filename": "fake_ciri",
         "count": "1",
-        "quote": "A mock-princess, a mock-queen for Cintra. A mock-ruler for the mouth of the Yarra, future lifeblood of the empire."
+        "quote": "Ты думал что он братан. А оказалось, что это не совсем братан!"
     },
     "ne_imperial_diviner": {
         "name": "Imperial Diviner",
@@ -3790,14 +3790,14 @@ var ext_ne_cards = {
         "quote": "All these signs can mean but one thing. The starts contend you shall be victorious today."
     },
     "ne_xarthisius": {
-        "name": "Xarthisius",
+        "name": "Серчизиус",
         "deck": "nilfgaard",
         "row": "ranged",
-        "strength": "7",
+        "strength": "13",
         "ability": "",
         "filename": "xarthisius",
         "count": "1",
-        "quote": "Astrology, hydromancy, haruspicy, ceromancy. Ovomancy, spodomancy, metroscopy, brontoscopy..."
+        "quote": "Говорят, что Серёга на первом курсе выглядел именно так..."
     },
     "ne_impera_enforcers": {
         "name": "Impera Enforcers",
