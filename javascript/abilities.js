@@ -252,7 +252,7 @@ var ability_dict = {
 	emhyr_imperial: {
 		description: "Возьмите карту Дождя из вашей колоды и сыграйте её немедленно.",
 		activated: async card => {
-			let out = card.holder.deck.findCard(c => c.name === "Torrential Rain");
+			let out = card.holder.deck.findCard(c => c.name === "Ебучий дождь");
 			if (out) await out.autoplay(card.holder.deck);
 		},
 		weight: (card, ai) => ai.weightWeatherFromDeck(card, "rain")
