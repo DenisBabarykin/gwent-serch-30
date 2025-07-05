@@ -415,7 +415,7 @@ var default_cards = {
         "deck": "realms",
         "row": "ranged",
         "strength": "5",
-        "ability": "",
+        "ability": "medic",
         "filename": "keira",
         "count": "1",
         "quote": "Сейчас как натравлю на тебя волшебных хорьков!"
