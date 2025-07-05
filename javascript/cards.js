@@ -10,24 +10,24 @@ var default_cards = {
         "quote": "You humans have... unusual tastes."
     },
     "spe_decoy": {
-        "name": "Decoy",
+        "name": "Чучело",
         "deck": "special",
         "row": "",
         "strength": "",
         "ability": "decoy",
         "filename": "decoy",
         "count": "3",
-        "quote": "When you run out of peasants, decoys also make decent arrow fodder."
+        "quote": "Хоп, и карту спиздил!"
     },
     "spe_frost": {
-        "name": "Biting Frost",
+        "name": "Лето 2025",
         "deck": "weather",
         "row": "",
         "strength": "",
         "ability": "frost",
         "filename": "frost",
         "count": "3",
-        "quote": "Best part about frost - bodies of the fallen don't rot so quickly."
+        "quote": "Синоптики обещали аномальную жару. А в итоге я отморозил себе жопу."
     },
     "ntr_ciri": {
         "name": "Cirilla Fiona Elen Riannon",
@@ -40,24 +40,24 @@ var default_cards = {
         "quote": "Know when fairy tales cease to be tales? When people start believing in them."
     },
     "spe_clear": {
-        "name": "Clear Weather",
+        "name": "Конец выходных",
         "deck": "weather",
         "row": "",
         "strength": "",
         "ability": "clear",
         "filename": "clear",
-        "count": "2",
-        "quote": "The sun' shinin', Dromle! The sun's shinin'! Maybe there's hope left after all..."
+        "count": "3",
+        "quote": "Сука, стоит выходным пройти, как погода сразу налаживается!"
     },
     "spe_horn": {
-        "name": "Commander's Horn",
+        "name": "Колл Галакуса",
         "deck": "special",
         "row": "",
         "strength": "",
         "ability": "horn",
         "filename": "horn",
         "count": "3",
-        "quote": "Plus one to morale, minus three to hearing."
+        "quote": "Мужики, стакаемся и сносим им палатку!"
     },
     "ntr_dandelion": {
         "name": "Dandelion",
@@ -90,34 +90,34 @@ var default_cards = {
         "quote": "If that's what it takes to save the world, it's better to let that world die."
     },
     "spe_fog": {
-        "name": "Impenetrable Fog",
+        "name": "Ёжик в тумане",
         "deck": "weather",
         "row": "",
         "strength": "",
         "ability": "fog",
         "filename": "fog",
         "count": "3",
-        "quote": "A good commander's dream... a bad one's horror."
+        "quote": "- Угу! У-гу-гу-гу-гу! Угу! У-гу-гу-гу-гу! Угу!\r\n- Псих!"
     },
     "spe_scorch": {
-        "name": "Scorch",
+        "name": "Напалм",
         "deck": "special",
         "row": "",
         "strength": "",
         "ability": "scorch",
         "filename": "scorch",
         "count": "3",
-        "quote": "Pillars of flame turn the mightiest to ash. All others tremble in shock and awe."
+        "quote": "Люблю запах напалма по утрам. Он пахнет победой."
     },
     "spe_rain": {
-        "name": "Torrential Rain",
+        "name": "Ебучий дождь",
         "deck": "weather",
         "row": "",
         "strength": "",
         "ability": "rain",
         "filename": "rain",
         "count": "2",
-        "quote": "Even the rain in this land smells like piss."
+        "quote": "Люблю дождь, в нём можно поссать..."
     },
     "ntr_triss": {
         "name": "Triss Merigold",
@@ -224,55 +224,15 @@ var default_cards = {
         "count": "0",
         "quote": "Grrrrr!"
     },
-    "nr_foltest_king": {
-        "name": "Foltest - King of Temeria",
-        "deck": "realms",
-        "row": "leader",
-        "strength": "",
-        "ability": "foltest_king",
-        "filename": "foltest_king",
-        "count": "1",
-        "quote": "It is natural and beautiful that a man should love his sister."
-    },
-    "nr_foltest_lord": {
-        "name": "Foltest - Lord Commander of the North",
-        "deck": "realms",
-        "row": "leader",
-        "strength": "",
-        "ability": "foltest_lord",
-        "filename": "foltest_lord",
-        "count": "1",
-        "quote": "Sod advisors and their schemes. I place my trust in my soldiers' blades."
-    },
     "nr_foltest_siegemaster": {
-        "name": "Foltest - The Siegemaster",
+        "name": "Серчтест мовский",
         "deck": "realms",
         "row": "leader",
         "strength": "",
         "ability": "foltest_siegemaster",
         "filename": "foltest_siegemaster",
         "count": "1",
-        "quote": "A well-aimed ballista razes not just the enemy's wall, but his morale as well."
-    },
-    "nr_foltest_steelforged": {
-        "name": "Foltest - The Steel-Forged",
-        "deck": "realms",
-        "row": "leader",
-        "strength": "",
-        "ability": "foltest_steelforged",
-        "filename": "foltest_steelforged",
-        "count": "1",
-        "quote": "A beautiful day for battle"
-    },
-    "nr_foltest_son_of_medell": {
-        "name": "Foltest - Son of Medell",
-        "deck": "realms",
-        "row": "leader",
-        "strength": "",
-        "ability": "foltest_son",
-        "filename": "foltest_son_of_medell",
-        "count": "1",
-        "quote": "Dammit, I rule this land and I refuse to creep around its corners."
+        "quote": "Так, вступаем в клан, мужики."
     },
     "nr_ballista": {
         "name": "Ballista",
@@ -321,7 +281,7 @@ var default_cards = {
         "quote": "I'd do anything for Temeria. Mostly, though, I kill for her."
     },
     "nr_catapult_1": {
-        "name": "Catapult",
+        "name": "Шкиловая катапульта",
         "id": 1,
         "deck": "realms",
         "row": "siege",
@@ -330,10 +290,10 @@ var default_cards = {
         "filename": "catapult_1",
         "count": "1",
         "target": "nr_catapult",
-        "quote": "The gods help those who have better catapults."
+        "quote": "Такая имбовая, потому что в майнкрафте тренировалась."
     },
     "nr_catapult_2": {
-        "name": "Catapult",
+        "name": "Шкиловая катапульта",
         "id": 2,
         "deck": "realms",
         "row": "siege",
@@ -342,7 +302,7 @@ var default_cards = {
         "filename": "catapult_2",
         "count": "1",
         "target": "nr_catapult",
-        "quote": "The gods help those who have better catapults."
+        "quote": "Такая имбовая, потому что в майнкрафте тренировалась."
     },
     "nr_crinfrid_1": {
         "name": "Crinfrid Reavers Dragon Hunter",
@@ -391,14 +351,14 @@ var default_cards = {
         "quote": "I conce made a prisoner vomit his own entrails... Ah, good times..."
     },
     "nr_banner_nurse": {
-        "name": "Dun Banner Medic",
+        "name": "Хилариса",
         "deck": "realms",
         "row": "siege",
         "strength": "5",
         "ability": "medic",
         "filename": "banner_nurse",
         "count": "1",
-        "quote": "Stitch red to red, white to white, and everything will be all right."
+        "quote": "Поднимает раненых бойцов и иногда сервера."
     },
     "nr_esterad": {
         "name": "Esterad Thyssen",
@@ -451,14 +411,14 @@ var default_cards = {
         "quote": "'You gotta recalibrate the arm by five degrees.' 'Do what by the what now?'"
     },
     "nr_keira": {
-        "name": "Keira Metz",
+        "name": "Кейра Суккулентиц",
         "deck": "realms",
         "row": "ranged",
         "strength": "5",
         "ability": "",
         "filename": "keira",
         "count": "1",
-        "quote": "If I'm to die today, I wish to look smashing for the occasion."
+        "quote": "Сейчас как натравлю на тебя волшебных хорьков!"
     },
     "nr_philippa": {
         "name": "Philippa Eilhart",
@@ -507,14 +467,14 @@ var default_cards = {
         "quote": "I's a war veteran! ... spare me a crown?"
     },
     "nr_stennis": {
-        "name": "Prince Stennis",
+        "name": "Принц Нурис",
         "deck": "realms",
         "row": "close",
         "strength": "5",
         "ability": "spy",
         "filename": "stennis",
         "count": "1",
-        "quote": "He ploughin' wears the golden armor. Golden. 'Course he's an arsehole."
+        "quote": "Надо забежать посмотреть где палатка"
     },
     "nr_redania": {
         "name": "Redanian Foot Soldier",
@@ -577,14 +537,14 @@ var default_cards = {
         "quote": "Gwent's like politics, just more honest."
     },
     "nr_sheala": {
-        "name": "Síle de Tansarville",
+        "name": "Шеала де Бабарвиль",
         "deck": "realms",
         "row": "ranged",
         "strength": "5",
         "ability": "",
         "filename": "sheala",
         "count": "1",
-        "quote": "The Lodge lacks humility. Our lust for power may yet be our undoing."
+        "quote": "Я очень занята!"
     },
     "nr_thaler": {
         "name": "Thaler",
@@ -597,14 +557,14 @@ var default_cards = {
         "quote": "Fuck off! We aren't all ploughin' philanderers. Some of us have depth..."
     },
     "nr_sabrina": {
-        "name": "Sabrina Glevissig",
+        "name": "Сабрина Суккулентиг",
         "deck": "realms",
         "row": "ranged",
-        "strength": "4",
+        "strength": "6",
         "ability": "",
         "filename": "sabrina",
         "count": "1",
-        "quote": "The Daughter of the Kaedweni Wilderness."
+        "quote": "Сейчас как натравлю на тебя хорьков!"
     },
     "nr_vernon": {
         "name": "Vernon Roche",
@@ -657,54 +617,14 @@ var default_cards = {
         "quote": "Castle won't batter itself down, now will it? Get them trebuchets rollin'!"
     },
     "ne_emhyr_imperial": {
-        "name": "Emhyr var Emreis - His Imperial Majesty",
+        "name": "Ченьчир Вар Чемчейс",
         "deck": "nilfgaard",
         "row": "leader",
         "strength": "",
         "ability": "emhyr_imperial",
         "filename": "emhyr_imperial",
         "count": "1",
-        "quote": "The skies wept when my Pavetta died. They will not weep for me."
-    },
-    "ne_emhyr_emperor": {
-        "name": "Emhyr var Emreis - Emperor of Nilfgaard",
-        "deck": "nilfgaard",
-        "row": "leader",
-        "strength": "",
-        "ability": "emhyr_emperor",
-        "filename": "emhyr_emperor",
-        "count": "1",
-        "quote": "Your motives do not interest me. Only results."
-    },
-    "ne_emhyr_whiteflame": {
-        "name": "Emhyr var Emreis - the White Flame",
-        "deck": "nilfgaard",
-        "row": "leader",
-        "strength": "",
-        "ability": "emhyr_whiteflame",
-        "filename": "emhyr_whiteflame",
-        "count": "1",
-        "quote": "A sword is but one of many tools at a ruler's disposal."
-    },
-    "ne_emhyr_relentless": {
-        "name": "Emhyr var Emreis - The Relentless",
-        "deck": "nilfgaard",
-        "row": "leader",
-        "strength": "",
-        "ability": "emhyr_relentless",
-        "filename": "emhyr_relentless",
-        "count": "1",
-        "quote": "They do not call me the Patient. Take care they do not call you the Headless."
-    },
-    "ne_emhyr_invader_of_the_north": {
-        "name": "Emhyr var Emreis - Invader of the North",
-        "deck": "nilfgaard",
-        "row": "leader",
-        "strength": "",
-        "ability": "emhyr_invader",
-        "filename": "emhyr_invader_of_the_north",
-        "count": "1",
-        "quote": "Emperors command multitudes, yet cannot control two things: their time and their hearts."
+        "quote": "Да не люблю я выёбываться, чё вы наговариваете?"
     },
     "ne_albrich": {
         "name": "Albrich",
@@ -717,14 +637,14 @@ var default_cards = {
         "quote": "A fireball? Of course. Whatever Your Imperial Majesty whishes."
     },
     "ne_assire": {
-        "name": "Assire var Anahid",
+        "name": "Фофусирэ вар Анагыд",
         "deck": "nilfgaard",
         "row": "ranged",
-        "strength": "6",
+        "strength": "7",
         "ability": "",
         "filename": "assire",
         "count": "1",
-        "quote": "Nilfgaardian mages do have a choice, servile submission, or the gallows."
+        "quote": "Мммммммммммммм!"
     },
     "ne_black_archer": {
         "name": "Black Infantry Archer",
@@ -747,14 +667,14 @@ var default_cards = {
         "quote": "I aim for the knee. Always."
     },
     "ne_cahir": {
-        "name": "Cahir Mawr Dyffryn aep Ceallach",
+        "name": "Максыр аэп Кеаллах",
         "deck": "nilfgaard",
         "row": "close",
-        "strength": "6",
+        "strength": "8",
         "ability": "",
         "filename": "cahir",
         "count": "1",
-        "quote": "His eyes flashed under his winged helmet. Fire gleamed from his sword's blade."
+        "quote": "Его именем всё ещё пугают детей"
     },
     "ne_cynthia": {
         "name": "Cynthia",
@@ -787,14 +707,14 @@ var default_cards = {
         "quote": "Double or nothing, aim for his cock"
     },
     "ne_fringilla": {
-        "name": "Fringilla Vigo",
+        "name": "Мавылья Виго",
         "deck": "nilfgaard",
         "row": "ranged",
-        "strength": "6",
+        "strength": "7",
         "ability": "",
         "filename": "fringilla",
         "count": "1",
-        "quote": "Magic is the highest good. It transcends all borders and divisions."
+        "quote": "Спорим я съем сырой кусок мяса?"
     },
     "ne_heavy_zerri": {
         "name": "Heavy Zerrikanian Fire Scorpion",
@@ -807,62 +727,62 @@ var default_cards = {
         "quote": "Not the best for taking cities, but great for razing them to the ground."
     },
     "ne_impera_brigade_1": {
-        "name": "Impera Brigade Guard",
+        "name": "Рядовой шутник",
         "id": 1,
         "deck": "nilfgaard",
         "row": "close",
-        "strength": "3",
+        "strength": "4",
         "ability": "bond",
         "filename": "impera_brigade_1",
         "count": "1",
         "target": "ne_impera_brigade",
-        "quote": "The Impera Brigade never surrenders. Ever."
+        "quote": "Рядовой Шутник, ты зачем записался в мою любимую морскую пехоту?"
     },
     "ne_impera_brigade_2": {
-        "name": "Impera Brigade Guard",
+        "name": "Рядовой шутник",
         "id": 2,
         "deck": "nilfgaard",
         "row": "close",
-        "strength": "3",
+        "strength": "4",
         "ability": "bond",
         "filename": "impera_brigade_2",
         "count": "1",
         "target": "ne_impera_brigade",
-        "quote": "The Impera Brigade never surrenders. Ever."
+        "quote": "Рядовой Шутник, ты зачем записался в мою любимую морскую пехоту?"
     },
     "ne_impera_brigade_3": {
-        "name": "Impera Brigade Guard",
+        "name": "Рядовой шутник",
         "id": 3,
         "deck": "nilfgaard",
         "row": "close",
-        "strength": "3",
+        "strength": "4",
         "ability": "bond",
         "filename": "impera_brigade_3",
         "count": "1",
         "target": "ne_impera_brigade",
-        "quote": "The Impera Brigade never surrenders. Ever."
+        "quote": "Рядовой Шутник, ты зачем записался в мою любимую морскую пехоту?"
     },
     "ne_impera_brigade_4": {
-        "name": "Impera Brigade Guard",
+        "name": "Рядовой шутник",
         "id": 4,
         "deck": "nilfgaard",
         "row": "close",
-        "strength": "3",
+        "strength": "4",
         "ability": "bond",
         "filename": "impera_brigade_4",
         "count": "1",
         "target": "ne_impera_brigade",
-        "quote": "The Impera Brigade never surrenders. Ever."
+        "quote": "Рядовой Шутник, ты зачем записался в мою любимую морскую пехоту?"
     },
     "ne_letho": {
-        "name": "Letho of Gulet",
+        "name": "Света из Гулеты",
         "deck": "nilfgaard",
         "row": "close",
-        "strength": "10",
+        "strength": "11",
         "ability": "hero",
         "filename": "letho",
         "count": "1",
-        "quote": "Witchers never die in the beds."
+        "quote": "Я уважаю только силу."
     },
     "ne_menno": {
         "name": "Menno Coehoorn",
@@ -885,14 +805,14 @@ var default_cards = {
         "quote": "No Nordling pikemen or dwarven spearbearers can hope to best trained cavalary."
     },
     "ne_moorvran": {
-        "name": "Morvran Voorhis",
+        "name": "Вовран Воорхис",
         "deck": "nilfgaard",
         "row": "siege",
-        "strength": "10",
+        "strength": "11",
         "ability": "hero",
         "filename": "moorvran",
         "count": "1",
-        "quote": "Summer sun reflecting in the quiet waters of Alba - that's Nilfgaard to me."
+        "quote": "Нельзя так просто взять и не поменять чашечку"
     },
     "ne_nauzicaa_1": {
         "name": "Nausicaa Cavalry Rider",
@@ -951,14 +871,14 @@ var default_cards = {
         "quote": "You'll die as painfully as the pathetic traitor Windhalm did."
     },
     "ne_renuald": {
-        "name": "Renuald aep Matsen",
+        "name": "Илиальд аэп Матсен",
         "deck": "nilfgaard",
         "row": "close",
         "strength": "5",
         "ability": "morale",
         "filename": "renuald",
         "count": "1",
-        "quote": "They say the Impera fear nothing. Untrue. Renuald scares them shitless."
+        "quote": "Люблю футбольчик."
     },
     "ne_rotten": {
         "name": "Rotten Mangonel",
@@ -1001,14 +921,14 @@ var default_cards = {
         "quote": "I never miss twice."
     },
     "ne_stefan": {
-        "name": "Stefan Skellen",
+        "name": "Стемфан Скеллен",
         "deck": "nilfgaard",
         "row": "close",
         "strength": "9",
         "ability": "spy",
         "filename": "stefan",
         "count": "1",
-        "quote": "My mark scards the face of our future empress. That is my proudest achievement."
+        "quote": "Я скоро сяду за диплом, честно"
     },
     "ne_sweers": {
         "name": "Sweers",
@@ -1041,14 +961,14 @@ var default_cards = {
         "quote": "For a fire mage, he's not very... flamboyant."
     },
     "ne_vattier": {
-        "name": "Vattier de Rideaux",
+        "name": "Прокидры-де-ридо",
         "deck": "nilfgaard",
         "row": "close",
-        "strength": "4",
+        "strength": "2",
         "ability": "spy",
         "filename": "vattier",
         "count": "1",
-        "quote": "There's never been a problem a well-planned assassination couldn't solve."
+        "quote": "Прокидывание - дело тонкое..."
     },
     "ne_vreemde": {
         "name": "Vreemde",
@@ -1061,16 +981,16 @@ var default_cards = {
         "quote": "Discipline is the Empire's deadliest weapon."
     },
     "ne_young_emissary_1": {
-        "name": "Young Emissary",
+        "name": "Молодой Ваниссар",
         "id": 1,
         "deck": "nilfgaard",
         "row": "close",
         "strength": "5",
         "ability": "bond",
         "filename": "young_emissary_1",
-        "count": "1",
+        "count": "3",
         "target": "ne_young_emissary",
-        "quote": "If I acquit myself well, perhaps next they'll post me somewhere more civilized."
+        "quote": "Хе-хе, я тоже умею прокидывать!"
     },
     "ne_young_emissary_2": {
         "name": "Young Emissary",
@@ -2504,24 +2424,24 @@ var ext_nr_cards = {
         "quote": "Soldiers loyal to the old baron of Tridam left the city with Falibor..."
     },
     "nr_vandergrift": {
-        "name": "Vandergrift",
+        "name": "Вандерхер",
         "deck": "realms",
         "row": "ranged",
-        "strength": "9",
+        "strength": "10",
         "ability": "hero",
         "filename": "vandergrift",
         "count": "1",
-        "quote": "What has that witch done?!"
+        "quote": "Бля, только б колени не отлетели!"
     },
     "nr_kaedweni_siege_support_1": {
-        "name": "Kaedweni Siege Support",
+        "name": "Осадный инженер",
         "deck": "realms",
         "row": "siege",
-        "strength": "2",
+        "strength": "3",
         "ability": "morale",
         "filename": "kaedweni_siege_support_1",
-        "count": "1",
-        "quote": "I never miss twice."
+        "count": "2",
+        "quote": "Кто инженер? Я инженер нахуй!"
     },
     "nr_kaedweni_siege_support_2": {
         "name": "Kaedweni Siege Support",
@@ -2534,27 +2454,27 @@ var ext_nr_cards = {
         "quote": "I never miss twice."
     },
     "nr_henselt": {
-        "name": "Henselt",
+        "name": "Сонсельт",
         "deck": "realms",
         "row": "siege",
         "strength": "10",
         "ability": "hero",
         "filename": "henselt",
         "count": "1",
-        "quote": "King Henselt did not look like a thief, but, with all due respect, that's really what he was."
+        "quote": "Стоп. Почему я Хенсельт???"
     },
     "nr_kaedweni_reinforcement": {
-        "name": "Kaedweni Reinforcement",
+        "name": "Союзный клан",
         "deck": "realms",
         "row": "ranged",
         "strength": "3",
         "ability": "medic",
         "filename": "kaedweni_reinforcement",
         "count": "1",
-        "quote": "Sound the retreat! Regroup! And wait for reinforcements!"
+        "quote": "Подкрепа от союзников. Занимаем сервер, мужики!"
     },
     "nr_reinforced_ballista_1": {
-        "name": "Reinforced Ballista",
+        "name": "Баллиста AN-94",
         "id": 1,
         "deck": "realms",
         "row": "siege",
@@ -2563,10 +2483,10 @@ var ext_nr_cards = {
         "filename": "reinforced_ballista_1",
         "count": "1",
         "target": "nr_reinforced_ballista",
-        "quote": "Never manages to hit the same place twice, which might constitute a real problem."
+        "quote": "Известна своей точностью и режимом стрельбы короткими очередями"
     },
     "nr_reinforced_ballista_2": {
-        "name": "Reinforced Ballista",
+        "name": "Баллиста FN SCAR-L",
         "id": 2,
         "deck": "realms",
         "row": "siege",
@@ -2575,10 +2495,10 @@ var ext_nr_cards = {
         "filename": "reinforced_ballista_2",
         "count": "1",
         "target": "nr_reinforced_ballista",
-        "quote": "Never manages to hit the same place twice, which might constitute a real problem."
+        "quote": "Современное зарубежное оружие с высоким уроном и хорошей отдачей."
     },
     "nr_reinforced_trebuchet_1": {
-        "name": "Reinforced Trebuchet",
+        "name": "Требушет Винторез",
         "id": 1,
         "deck": "realms",
         "row": "siege",
@@ -2587,10 +2507,10 @@ var ext_nr_cards = {
         "filename": "reinforced_trebuchet_1",
         "count": "1",
         "target": "nr_reinforced_trebuchet",
-        "quote": "Feel that? The earth trembles each time Big Bertha loose a stone."
+        "quote": "Требушет со встроенным прицелом. Для стрельбы из-за угла."
     },
     "nr_reinforced_trebuchet_2": {
-        "name": "Reinforced Trebuchet",
+        "name": "Требушет Гроза",
         "id": 2,
         "deck": "realms",
         "row": "siege",
@@ -2599,47 +2519,47 @@ var ext_nr_cards = {
         "filename": "reinforced_trebuchet_2",
         "count": "1",
         "target": "nr_reinforced_trebuchet",
-        "quote": "Feel that? The earth trembles each time Big Bertha loose a stone."
+        "quote": "Лучшее сочетание к винторезу."
     },
     "nr_ban_ard_tutor": {
-        "name": "Ban Ard Tutor",
+        "name": "Учитель из Ван-арда",
         "deck": "realms",
         "row": "ranged",
         "strength": "10",
         "ability": "hero",
         "filename": "ban_ard_tutor",
         "count": "1",
-        "quote": "Ban Ard deserved a mention, for it is famous for the school of young adepts of the magical arts."
+        "quote": "Учит молодежь не забывать свои пальцы в станке"
     },
     "nr_demavend": {
-        "name": "Demavend",
+        "name": "Темавенд",
         "deck": "realms",
         "row": "siege",
         "strength": "10",
         "ability": "hero",
         "filename": "demavend",
         "count": "1",
-        "quote": "War's crux lies in winning, not in being persistent."
+        "quote": "Принесите мне голову заведующего кафедрой!"
     },
     "nr_kaedweni_knight": {
-        "name": "Kaedweni Knight",
+        "name": "Подозрительный рыцарь",
         "deck": "realms",
         "row": "close",
-        "strength": "7",
+        "strength": "9",
         "ability": "",
         "filename": "kaedweni_knight",
         "count": "1",
-        "quote": "Not every man in the Kaedweni army supports his king's politics..."
+        "quote": "Иногда он приходит на помощь, но доспехи не те. Не хочет ли он нас прокинуть??"
     },
     "nr_dun_banner_heavy_cavalry_1": {
-        "name": "Dun Banner Heavy Cavalry",
+        "name": "Крутотянистый кавалерист",
         "deck": "realms",
         "row": "ranged",
         "strength": "7",
         "ability": "",
         "filename": "dun_banner_heavy_cavalry_1",
         "count": "1",
-        "quote": "Always wondered... how the blazes do those lads handle nature's call...?"
+        "quote": "Скачу на B"
     },
     "nr_dun_banner_heavy_cavalry_2": {
         "name": "Dun Banner Heavy Cavalry",
@@ -2652,44 +2572,34 @@ var ext_nr_cards = {
         "quote": "Always wondered... how the blazes do those lads handle nature's call...?"
     },
     "nr_odrin": {
-        "name": "Odrin",
+        "name": "Сархан",
         "deck": "realms",
         "row": "agile",
         "strength": "3",
         "ability": "morale",
         "filename": "odrin",
         "count": "1",
-        "quote": "Drinkin' without Odrin is like rowin' without a paddle."
+        "quote": "Выпьем рому, мужики!"
     },
     "nr_seltkirk": {
-        "name": "Seltkirk of Gulet",
+        "name": "Светкирк",
         "deck": "realms",
         "row": "close",
         "strength": "10",
         "ability": "hero",
         "filename": "seltkirk",
         "count": "1",
-        "quote": "Seltkirk of Gulet was Demavend champion, known as the invincible white knight."
+        "quote": "Насилие - вот ответ на все вопросы!"
     },
     "nr_kaedweni_sergeant": {
-        "name": "Kaedweni Sergeant",
+        "name": "Мавывчанский сержант",
         "deck": "realms",
         "row": "siege",
-        "strength": "5",
+        "strength": "6",
         "ability": "morale",
         "filename": "kaedweni_sergeant",
         "count": "1",
-        "quote": "Forward, you sorry sods! Or you'll see the Nilfgaardians are the least of your worries!"
-    },
-    "nr_queen_calanthe": {
-        "name": "Queen Calanthe: Lioness of Cintra",
-        "deck": "realms",
-        "row": "leader",
-        "strength": "",
-        "ability": "queen_calanthe",
-        "filename": "queen_calanthe",
-        "count": "1",
-        "quote": "They call her the 'Lioness of Cintra'. And not without good reason."
+        "quote": "Шевелите булками, лентяи! А то оставлю вас всех без зарплаты!"
     },
     "nr_viraxas": {
         "name": "Viraxas",
@@ -3339,36 +3249,6 @@ var ext_nr_cards = {
         "count": "1",
         "quote": "The hulking siege engine rolled to the front, within few bashes the gates crashed open."
     },
-    "nr_fake_ciri": {
-        "name": "Fake Ciri: Empress of Nilfgaard",
-        "deck": "realms",
-        "row": "leader",
-        "strength": "",
-        "ability": "fake_ciri",
-        "filename": "fake_ciri",
-        "count": "1",
-        "quote": "It is a dull name. A name just right for somebody who's a nobody. As long as a am Cirilla Fiona I mean something."
-    },
-    "nr_radovid_stern": {
-        "name": "Radovid V: the Stern",
-        "deck": "realms",
-        "row": "leader",
-        "strength": "",
-        "ability": "radovid_stern",
-        "filename": "radovid_stern",
-        "count": "1",
-        "quote": "They say chess teaches one ot think strategically. What a load of rubbish!"
-    },
-    "nr_radovid_ruthless": {
-        "name": "Radovid V: the Ruthless",
-        "deck": "realms",
-        "row": "leader",
-        "strength": "",
-        "ability": "radovid_ruthless",
-        "filename": "radovid_ruthless",
-        "count": "1",
-        "quote": "A king should be merciless towards his enemies and generous to his friends."
-    },
     "nr_redanian_elite": {
         "name": "Redanian Elite",
         "deck": "realms",
@@ -3747,17 +3627,17 @@ var ext_ne_cards = {
         "quote": "The wedge of riders thundered into the phalanx with crushing momentum."
     },
     "ne_peter_saar_gwynleve": {
-        "name": "Peter Saar Gwynleve",
+        "name": "Даня Саар ван Гвинлеве",
         "deck": "nilfgaard",
         "row": "close",
         "strength": "9",
         "ability": "hero",
         "filename": "peter_saar_gwynleve",
         "count": "1",
-        "quote": "These are not the hands of an Excellency, but of a farmer. So we speak peasant to peasant."
+        "quote": "Ща я тебя приготовлю."
     },
     "ne_impera_brigade_5": {
-        "name": "Impera Brigade Guard",
+        "name": "Рядовой шутник",
         "id": 5,
         "deck": "nilfgaard",
         "row": "close",
@@ -3766,27 +3646,27 @@ var ext_ne_cards = {
         "filename": "impera_brigade_5",
         "count": "1",
         "target": "ne_impera_brigade",
-        "quote": "The Impera Brigade never surrenders. Ever."
+        "quote": "Рядовой Шутник, ты зачем записался в мою любимую морскую пехоту?"
     },
     "ne_jan_calveit": {
-        "name": "Jan Calveit",
+        "name": "Мов Кальвейт",
         "deck": "nilfgaard",
         "row": "ranged",
         "strength": "8",
         "ability": "hero",
         "filename": "jan_calveit",
         "count": "1",
-        "quote": "To prepare for the future, it’s best to first know it."
+        "quote": "Вот сейчас давай!"
     },
     "ne_bribery": {
-        "name": "Bribery",
+        "name": "Приглашение в Мак",
         "deck": "nilfgaard",
         "row": "agile",
-        "strength": "10",
+        "strength": "8",
         "ability": "spy",
         "filename": "bribery",
         "count": "1",
-        "quote": "In truth, the Nilfgaardian floren rules the world."
+        "quote": "Сделаем как ты скажешь, но потом в Мак!"
     },
     "ne_rot_tosser": {
         "name": "Rot Tosser",
@@ -3840,24 +3720,24 @@ var ext_ne_cards = {
         "quote": "Men require constant alluring. Mystique and refinement do the job quite well."
     },
     "ne_treason": {
-        "name": "Treason",
+        "name": "Прокидывание",
         "deck": "nilfgaard",
         "row": "siege",
         "strength": "3",
         "ability": "scorch",
         "filename": "treason",
         "count": "1",
-        "quote": "In Nilfgaard, trustful people are considered an endangered species."
+        "quote": "В Ченьчаарде все прокидывают. И я тоже."
     },
     "ne_usurper": {
-        "name": "Usurper",
+        "name": "Унурпатор",
         "deck": "nilfgaard",
         "row": "close",
         "strength": "10",
         "ability": "hero",
         "filename": "usurper",
         "count": "1",
-        "quote": "Why should something as trivial as birth decide who rules over us?"
+        "quote": "Узурпировать ли мне власть или уйти в оппозицию?"
     },
     "ne_infiltrator": {
         "name": "Infiltrator",

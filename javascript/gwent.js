@@ -1001,7 +1001,7 @@ class Player {
 
 	async activateFactionAbility() {
 		let factionData = factions[this.deck.faction];
-		if (factionData.activeAbility && this.factionAbilityUses > 0) await ui.popup("Use faction ability [E]", () => this.useFactionAbility(), "Cancel [Q]", () => this.escapeFactionAbility(), "Would you like to use your faction ability?", "Faction ability: " + factionData.description, false);
+		if (factionData.activeAbility && this.factionAbilityUses > 0) await ui.popup("Использовать способность фракции [E]", () => this.useFactionAbility(), "Отмена [Q]", () => this.escapeFactionAbility(), "Хотите воспользоваться способностью фракции?", "Способность фракции: " + factionData.description, false);
 		return;
 	}
 
@@ -2082,16 +2082,16 @@ class Card {
 				if ("activated" in ab) this.activated.push(ab.activated);
 			}
 		}
-		if (this.row === "leader") this.desc_name = "Leader Ability";
+		if (this.row === "leader") this.desc_name = "Способность лидера";
 		else if (this.abilities.length > 0) {
 			this.desc_name = ability_dict[this.abilities[this.abilities.length - 1]].name;
 			if (this.abilities.length > 1) this.desc_name += " / " + ability_dict[this.abilities[this.abilities.length - 2]].name;
 		} else if (this.row === "agile") this.desc_name = "Agile";
-		else if (this.hero) this.desc_name = "Hero";
+		else if (this.hero) this.desc_name = "Похуист";
 		else this.desc_name = "";
 		this.desc = this.row === "agile" ? "<p><b>Agile:</b> " + ability_dict["agile"].description + "</p>" : "";
 		for (let i = this.abilities.length - 1; i >= 0; --i) {
-			let abi_name = (ability_dict[this.abilities[i]].name ? ability_dict[this.abilities[i]].name : "Leader Ability");
+			let abi_name = (ability_dict[this.abilities[i]].name ? ability_dict[this.abilities[i]].name : "Способность лидера");
 			this.desc += "<p><b>" + abi_name + ":</b> " + ability_dict[this.abilities[i]].description + "</p>";
 		}
 		if (this.abilities.includes("avenger") && this.target) {
@@ -2100,7 +2100,7 @@ class Card {
 			if (target["ability"].length > 0) this.desc += " and abilities " + target["ability"].split(" ").map(a => ability_dict[a]["name"]).join(" / ");
 			this.desc += "</p>";
 		}
-		if (this.hero) this.desc += "<p><b>Hero:</b> " + ability_dict["hero"].description + "</p>";
+		if (this.hero) this.desc += "<p><b>Похуист:</b> " + ability_dict["hero"].description + "</p>";
 		this.elem = this.createCardElem(this);
 	}
 
@@ -2540,21 +2540,21 @@ class UI {
 
 	async notification(name, duration) {
 		var guia1 = {
-			"notif-nilfgaard-wins-draws": "Nilfgaard wins draws",
+			"notif-nilfgaard-wins-draws": "Ченьчгаард выиграл ничёй",
 			"notif-op-white-flame": "The opponent's leader cancel your opponent's Leader Ability",
-			"notif-op-leader": "Opponent uses leader",
-			"notif-me-first": "You will go first",
-			"notif-op-first": "Your opponent will go first",
-			"notif-me-coin": "You will go first",
-			"notif-op-coin": "Your opponent will go first",
-			"notif-round-start": "Round Start",
-			"notif-me-pass": "Round passed",
-			"notif-op-pass": "Your opponent has passed",
-			"notif-win-round": "You won the round!",
-			"notif-lose-round": "Your opponent won the round",
-			"notif-draw-round": "The round ended in a draw",
-			"notif-me-turn": "Your turn!",
-			"notif-op-turn": "Opponent's turn",
+			"notif-op-leader": "Оппонент использовал свою лидерскую способность",
+			"notif-me-first": "Вы будете ходить первым",
+			"notif-op-first": "Ваш оппонент будет ходить первым",
+			"notif-me-coin": "Вы будете ходить первым",
+			"notif-op-coin": "Ваш оппонент будет ходить первым",
+			"notif-round-start": "Раунд начался",
+			"notif-me-pass": "Раунд закончился",
+			"notif-op-pass": "Ваш оппонент пропустил ход",
+			"notif-win-round": "Вы выиграли раунд!",
+			"notif-lose-round": "Ваш оппонент выиграл раунд!",
+			"notif-draw-round": "Раунд закончился вничью",
+			"notif-me-turn": "Ваш ход",
+			"notif-op-turn": "Ход вашего оппонента",
 			"notif-north": "Northern Realms faction ability triggered - North draws an additional card.",
 			"notif-monsters": "Monsters faction ability triggered - one randomly-chosen Monster Unit Card stays on the board",
 			"notif-scoiatael": "Opponent used the Scoia'tael faction perk to go first.",
@@ -3355,11 +3355,11 @@ class DeckMaker {
 			this.start_op_deck.leader = leaders[randomInt(leaders.length)];
 		}
 		if (game.fullAI) {
-			player_me = new Player(0, "Player 1", me_deck, true);
-			player_op = new Player(1, "Player 2", this.start_op_deck, true);
+			player_me = new Player(0, "Команда Серч", me_deck, true);
+			player_op = new Player(1, "Команда Ченьч", this.start_op_deck, true);
 		} else {
-			player_me = new Player(0, "Player 1", me_deck, false);
-			player_op = new Player(1, "Player 2", this.start_op_deck, true);
+			player_me = new Player(0, "Команда Серч", me_deck, false);
+			player_op = new Player(1, "Команда Ченьч", this.start_op_deck, true);
 		}
 		this.elem.classList.add("hide");
 		tocar("game_opening", false);
@@ -3386,15 +3386,15 @@ class DeckMaker {
 				filename: card_dict[deck["leader"]]["filename"],
 				desc_name: deck["title"],
 				desc: "<p>" +
-						"<b>Faction ability:</b> " +
+						"<b>Способность фракции:</b> " +
 						factions[deck["faction"]]["description"] +
 					"</p>" +
 					"<p>" +
-						"<b>Leader ability:</b> " +
+						"<b>Способность лидера:</b> " +
 						ability_dict[card_dict[deck["leader"]]["ability"]].description + 
 					"</p>" +
 					"<p>" +
-						"<b>Deck description:</b> " +
+						"<b>Описание доски:</b> " +
 						deck["description"],
 				faction: deck["faction"]
 			};
@@ -3429,15 +3429,15 @@ class DeckMaker {
 				filename: card_dict[deck["leader"]]["filename"],
 				desc_name: deck["title"],
 				desc: "<p>" +
-						"<b>Faction ability:</b> " +
+						"<b>Способность фракции:</b> " +
 						factions[deck["faction"]]["description"] +
 					"</p>" +
 					"<p>" +
-						"<b>Leader ability:</b> " +
+						"<b>Способность лидера:</b> " +
 						ability_dict[card_dict[deck["leader"]]["ability"]].description + 
 					"</p>" +
 					"<p>" +
-						"<b>Deck description:</b> " +
+						"<b>Описание доски:</b> " +
 						deck["description"],
 				faction: deck["faction"]
 			};
@@ -3845,8 +3845,8 @@ var nilfgaard_wins_draws = false;
 
 var nova = "";
 var lastSound = "";
-var original = "Pass";
-var original2 = "Give up";
+var original = "Пас";
+var original2 = "Сдаться";
 var cache_notif = ["op-leader"];
 
 setTimeout(dimensionar(), 300);

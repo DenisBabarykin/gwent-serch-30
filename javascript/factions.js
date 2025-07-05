@@ -2,7 +2,7 @@
 
 var factions = {
 	realms: {
-		name: "Northern Realms",
+		name: "Серчиковые Королевства",
 		factionAbility: player => game.roundStart.push(async () => {
 			if (game.roundCount > 1 && game.roundHistory[game.roundCount - 2].winner === player) {
 				player.deck.draw(player.hand);
@@ -12,11 +12,11 @@ var factions = {
 		}),
 		activeAbility: false,
 		abilityUses: 0,
-		description: "Draw a card from your deck whenever you win a round."
+		description: "Получает дополнительную карту после выиграного раунда.",
 	},
 	nilfgaard: {
-		name: "Nilfgaardian Empire",
-		description: "Wins any round that ends in a draw.",
+		name: "Нильфченьчская Империя",
+		description: "Выигрывает раунд, если он заканчивается ничьей.",
 		activeAbility: false,
 		abilityUses: 0
 	},

@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang = "en-US">
+<html lang = "ru">
 	<head>
-		<title>Gwent 3.1</title>
+		<title>Гвинт - Серёге 30!</title>
 		<meta charset = "utf-8" />
 		<meta name = "author" content = "Sundaram, Costa & Sylver" />
-		<meta name = "description" content = "Play the original Gwent minigame from The Witcher 3 in your browser! Includes cards from Hearts of Stone and Blood & Wine!" />
+		<meta name = "description" content = "Играйте в оригинальный мини-гвинт из Ведьмака 3 прямо в браузере! Включает карты из Каменных сердец и Кровь и вино!" />
 		<meta name = "keywords" content = "arun, sundaram, reynolds, costa, randompianist, sylver, romain, durban, programmer, gwent, tw3, witcher, card, game, gamedev, play" />
 		<meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
 		<link rel = "icon" type = "image/x-icon" href = "images/favicon.ico" />
@@ -16,14 +16,14 @@
 		<div class = "abs" id = "very_start_gradient"></div>
 		<div class = "abs" id = "very_start_bg2">
 			<div id = "very_start" class = "abs" style = "padding-top:55%">
-				UP FOR
+				СЫГРАЕМ В ГВИНТ
 				<br />
-				A FEW ROUNDS
+				РАДИ
 				<br />
-				OF GWENT?
+				ПОДАРКОВ?
 				<br /><br />
-				<font id = "load_text">Loading...</font>
-				<button class = "start-game_class" id = "button_start" style = "display:none">Click here to begin</button>
+				<font id = "load_text">Загрузка...</font>
+				<button class = "start-game_class" id = "button_start" style = "display:none">Погнали нахуй!</button>
 			</div>
 		</div>
 		<div id = "dimensions"></div>
@@ -46,7 +46,7 @@
 							<div></div>
 						</div>
 					</div>
-					<div id = "name-op" class = "name">Opponent</div>
+					<div id = "name-op" class = "name">Противник</div>
 					<div id = "deck-name-op" class = "deck-name"></div>
 					<div id = "hand-count-op" class = "hand-count">6</div>
 					<div id = "gem1-op" class = "gem gem-on bg-contain"></div>
@@ -54,7 +54,7 @@
 					<div id = "score-total-op" class = "score-total">
 						<div class = "center">0</div>
 					</div>
-					<div id = "passed-op">Passed</div>
+					<div id = "passed-op">Пасанул</div>
 				</section>
 				<div id = "weather" class = "card-container"></div>
 				<section id = "stats-me" class = "stats">
@@ -66,7 +66,7 @@
 							<div></div>
 						</div>
 					</div>
-					<div id = "passed-me">Passed</div>
+					<div id = "passed-me">Пасанул</div>
 					<div id = "hand-count-me" class = "hand-count">5</div>
 					<div id = "gem1-me" class = "gem gem-on bg-contain"></div>
 					<div id = "gem2-me" class = "gem gem-on bg-contain"></div>
@@ -82,8 +82,8 @@
 						<div></div>
 					</div>
 				</div>
-				<div id = "pass-button" class = "center botao-campo">Pass</div>
-				<div id = "giveup-button" class = "center botao-campo">Give up</div>
+				<div id = "pass-button" class = "center botao-campo">Пас</div>
+				<div id = "giveup-button" class = "center botao-campo">Сдаться</div>
 			</section>
 			<section id = "panel-mid" class = "panel">
 				<section id = "field-op" class = "field">
@@ -186,29 +186,29 @@
 					<tbody>
 						<tr>
 							<th colspan = "2"></th>
-							<th>Round 1</th>
-							<th>Round 2</th>
-							<th>Round 3</th>
+							<th>Раунд 1</th>
+							<th>Раунд 2</th>
+							<th>Раунд 3</th>
 						</tr>
 						<tr>
-							<th colspan = "2">You</th>
+							<th colspan = "2">Вы</th>
 							<td>0</td>
 							<td>0</td>
 							<td>0</td>
 						</tr>
 						<tr>
-							<th colspan = "2">Opponent</th>
+							<th colspan = "2">Противник</th>
 							<td>0</td>
 							<td>0</td>
 							<td>0</td>
 						</tr>
 					</tbody>
 				</table>
-				<p class = "hide">The battle cannot end in a draw. You can play a rematch using the same decks or surrender.</p>
+				<p class = "hide">Битва не может закончиться ничьей. Вы можете сыграть реванш с теми же колодами или сдаться.</p>
 				<div class = "end-screen-buttons">
-					<button>Customize</button>
-					<button>Replay</button>
-					<button onclick = "showStats(true)">Statistics</button>
+					<button>В меню</button>
+					<button>Реванш</button>
+					<button onclick = "showStats(true)">Статистика</button>
 				</div>
 			</section>
 			<section id = "deck-selector"></section>
@@ -218,44 +218,44 @@
 				<h1></h1>
 			</div>
 			<div class = "links" id = "stats">
-				<a href = "javascript:showStats(false);">Statistics</a>
+				<a href = "javascript:showStats(false);">Статистика</a>
 			</div>
 			<div class = "links" id = "site-links">
-				<a href = "rules.html" target = "_blank">Rules of Gwent</a>
+				<a href = "rules.html" target = "_blank">Правила Гвинта</a>
 			</div>
 			<p id = "faction-description"></p>
-			<a id = "select-deck" class = "deck-options">Select Own Deck</a>
-			<label id = "upload-deck" class = "deck-options">
-				<input type = "file" id = "add-file" value = "Import" style = "display:none;" />
-				Upload Deck
+			<a id = "select-deck" class = "deck-options">Моя колода</a>
+			<label id = "upload-deck" class = "deck-options" style="visibility: hidden;">
+				<input type = "file" id = "add-file" value = "Импортировать" style = "display:none;" />
+				Загрузить колоду
 			</label>
-			<a id = "change-faction" class = "deck-options">Change Faction</a>
-			<a id = "download-deck" class = "deck-options">Download Deck</a>
+			<a id = "change-faction" class = "deck-options" style="visibility: hidden;">Сменить фракцию</a>
+			<a id = "download-deck" class = "deck-options" style="visibility: hidden;">Скачать колоду</a>
 			<a id = "download-json" style = "display:none;"></a>
-			<a id = "select-op-deck" class = "deck-options">Select Opponent Deck ></a>
-			<span id = "op-deck-name" class = "deck-options">Random deck</span>
-			<h2 id = "card-bank-title" class = "card-contianer-title">Card Collection</h2>
-			<h2 id = "card-deck-title" class = "card-contianer-title">Cards in Deck</h2>
+			<a id = "select-op-deck" class = "deck-options">Колода противника></a>
+			<span id = "op-deck-name" class = "deck-options">Случайная колода</span>
+			<h2 id = "card-bank-title" class = "card-contianer-title">Коллекция карт</h2>
+			<h2 id = "card-deck-title" class = "card-contianer-title">Карты в колоде</h2>
 			<div id = "card-bank" class = "card-array"></div>
 			<div id = "card-deck" class = "card-array"></div>
 			<div id = "card-leader">
-				<p>Leader</p>
+				<p>Лидер</p>
 				<div></div>
 			</div>
 			<div id = "deck-stats">
-				<p>Total cards in deck</p>
+				<p>Всего карт в колоде</p>
 				<p>0</p>
-				<p>Number of Unit Cards</p>
+				<p>Количество карт-юнитов</p>
 				<p>0</p>
-				<p>Special Cards</p>
+				<p>Особые карты</p>
 				<p>0/10</p>
-				<p>Total Unit Card Strength</p>
+				<p>Общая сила карт-юнитов</p>
 				<p>0</p>
-				<p>Hero Cards</p>
+				<p>Золотые карты (похуисты)</p>
 				<p>0</p>
 			</div>
-			<button id = "start-game" class = "start-game_class">Start game</button>
-			<button id = "start-ai-game" class = "start-game_class">Start AI game</button>
+			<button id = "start-game" class = "start-game_class">Начать игру</button>
+			<button id = "start-ai-game" class = "start-game_class">ИИ против ИИ</button>
 		</section>
 		<div id = "toggle-music" class = "center music-customization" style = "display:none">♫</div>
 		<script type = "text/javascript" language = "JavaScript" src = "https://www.youtube.com/iframe_api"></script>

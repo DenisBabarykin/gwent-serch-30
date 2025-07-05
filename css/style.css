@@ -347,11 +347,11 @@ div.abs {
 }
 
 #notif-nilfgaard-wins-draws::after {
-	content:"Nilfgaard wins draws"
+	content:"Нильфченьчская империя выиграла, сыграв вничью"
 }
 
 #notif-op-leader::after {
-	content:"Opponent uses leader"
+	content:"Противник использовал свою лидерскую способность"
 }
 
 #notif-op-white-flame {
@@ -371,11 +371,11 @@ div.abs {
 }
 
 #notif-me-first::after {
-	content:"You will go first"
+	content:"Вы ходите первым"
 }
 
 #notif-op-first::after {
-	content:"Your opponent will go first"
+	content:"Противник ходит первым"
 }
 
 #notif-me-coin {
@@ -383,7 +383,7 @@ div.abs {
 }
 
 #notif-me-coin::after {
-	content:"You will go first"
+	content:"Вы ходите первым"
 }
 
 #notif-op-coin {
@@ -391,7 +391,7 @@ div.abs {
 }
 
 #notif-op-coin::after {
-	content:"Your opponent will go first"
+	content:"Противник ходит первым"
 }
 
 #notif-round-start {
@@ -399,7 +399,7 @@ div.abs {
 }
 
 #notif-round-start::after {
-	content:"Round Start"
+	content:"Начало раунда"
 }
 
 #notif-me-pass {
@@ -407,7 +407,7 @@ div.abs {
 }
 
 #notif-me-pass::after {
-	content:"Round passed"
+	content:"Конец раунда"
 }
 
 #notif-op-pass {
@@ -415,7 +415,7 @@ div.abs {
 }
 
 #notif-op-pass::after {
-	content:"Your opponent has passed"
+	content:"Противник зассал и пасанул"
 }
 
 #notif-win-round {
@@ -423,7 +423,7 @@ div.abs {
 }
 
 #notif-win-round::after {
-	content:"You won the round!"
+	content:"Вы выиграли раунд!"
 }
 
 #notif-lose-round {
@@ -431,7 +431,7 @@ div.abs {
 }
 
 #notif-lose-round::after {
-	content:"Your opponent won the round"
+	content:"Противник выиграл раунд!"
 }
 
 #notif-draw-round {
@@ -439,7 +439,7 @@ div.abs {
 }
 
 #notif-draw-round::after {
-	content:"The round ended in a draw"
+	content:"Раунд закончился вничью!"
 }
 
 #notif-me-turn {
@@ -447,7 +447,7 @@ div.abs {
 }
 
 #notif-me-turn::after {
-	content:"Your turn!"
+	content:"Ваш ход!"
 }
 
 #notif-op-turn {
@@ -455,11 +455,11 @@ div.abs {
 }
 
 #notif-op-turn::after {
-	content:"Opponent's turn"
+	content:"Ход противника!"
 }
 
 #notif-north::after {
-	content:"Northern Realms faction ability triggered:\A North draws an additional card."
+	content:"Способность фракции Серчиковых Королевств использована:\A Берется дополнительная карта."
 }
 
 #notif-north-scorch-cancelled::after {

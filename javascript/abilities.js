@@ -2,36 +2,36 @@
 
 var ability_dict = {
 	clear: {
-		name: "Clear Weather",
-		description: "Removes all Weather Cards (Biting Frost, Impenetrable Fog and Torrential Rain) effects. "
+		name: "Ясное небо",
+		description: "Убирает все погодные эффекты с поля боя. ",
 	},
 	frost: {
-		name: "Biting Frost",
-		description: "Sets the strength of all Close Combat cards to 1 for both players. "
+		name: "Мороз",
+		description: "Заморживает все боевые карты ближнего боя (кроме золотых) и снижает их силу до 1. ",
 	},
 	fog: {
-		name: "Impenetrable Fog",
-		description: "Sets the strength of all Ranged Combat cards to 1 for both players. "
+		name: "Непроглядный туман",
+		description: "Устанавливает силу всех боевых карт (кроме золотых) дальнего боя до 1 для обоих игроков. ",
 	},
 	rain: {
-		name: "Torrential Rain",
-		description: "Sets the strength of all Siege Combat cards to 1 for both players. "
+		name: "Проливной дождь",
+		description: "Устанавливает силу всех осадных карт (кроме золотых) до 1 для обоих игроков. ",
 	},
 	storm: {
 		name: "Skellige Storm",
 		description: "Reduces the Strength of all Range and Siege Units to 1. "
 	},
 	hero: {
-		name: "Hero",
-		description: "Not affected by any Special Cards or abilities. "
+		name: "Похуист",
+		description: "Не реагирует на эффекты или способности других карт.",
 	},
 	decoy: {
-		name: "Decoy",
-		description: "Swap with a card on the battlefield to return it to your hand. "
+		name: "Чучело",
+		description: "Возвращает карту с поля в руку игрока.",
 	},
 	horn: {
-		name: "Commander's Horn",
-		description: "Doubles the strength of all unit cards in that row. Limited to 1 per row. ",
+		name: "Командирский рог",
+		description: "Удваивает силу всех боевых карт в ряду (кроме золотых). ",
 		placed: async card => await card.animate("horn")
 	},
 	mardroeme: {
@@ -53,8 +53,8 @@ var ability_dict = {
 		}
 	},
 	scorch: {
-		name: "Scorch",
-		description: "Discard after playing. Kills the strongest card(s) on the battlefield. ",
+		name: "Казнь",
+		description: "Уничтожает все боевые карты (кроме золотых) с наибольшей силой. ",
 		activated: async card => {	
 			await ability_dict["scorch"].placed(card);
 			await board.toGrave(card, card.holder.hand);
@@ -105,8 +105,8 @@ var ability_dict = {
 		}
 	},
 	spy: {
-		name: "Spy",
-		description: "Place on your opponent's battlefield (counts towards your opponent's total) and draw 2 cards from your deck. ",
+		name: "Шпиониро-голубиро",
+		description: "Когда эта карта размещается, она добавляет 2 карты в руку противника и передаёт себя противнику. ",
 		placed: async (card) => {
 			if (card.isLocked()) return;
 			await card.animate("spy");
@@ -117,8 +117,8 @@ var ability_dict = {
 		}
 	},
 	medic: {
-		name: "Medic",
-		description: "Choose one card from your discard pile and play it instantly (no Heroes or Special Cards). ",
+		name: "Медик",
+		description: "Возвращает карту из отбоя на поле боя. ",
 		placed: async (card) => {
 			if (card.isLocked() || (card.holder.grave.findCards(c => c.isUnit()) <= 0)) return;
 			let grave = board.getRow(card, "grave", card.holder);
@@ -157,13 +157,13 @@ var ability_dict = {
 		}
 	},
 	morale: {
-		name: "Morale Boost",
-		description: "Adds +1 to all units in the row (excluding itself). ",
+		name: "Буст к морали",
+		description: "Увеличивает силу всех боевых карт в ряду на 1 (кроме золотых). ",
 		placed: async card => await card.animate("morale")
 	},
 	bond: {
-		name: "Tight Bond",
-		description: "Place next to a card with the same name to double the strength of both cards. ",
+		name: "Друганы",
+		description: "Если есть другая карта с этой способностью в ряду, то сила обеих карт удваивается. ",
 		placed: async card => {
 			if (card.isLocked()) return;
 			let bonds = card.currentLocation.findCards(c => c.target === card.target).filter(c => c.abilities.includes("bond")).filter(c => !c.isLocked());
@@ -235,7 +235,7 @@ var ability_dict = {
 		weight: (card, ai) =>  ai.weightCard(card_dict["spe_clear"])
 	},
 	foltest_siegemaster: {
-		description: "Doubles the strength of all your Siege units (unless a Commander's Horn is also present on that row).",
+		description: "Удваивает силу всех ваших осадных юнитов (если на этой линии нет Командирского рога).",
 		activated: async card => await board.getRow(card, "siege", card.holder).leaderHorn(card),
 		weight: (card, ai) => ai.weightHornRow(card, board.getRow(card, "siege", card.holder))
 	},
@@ -250,7 +250,7 @@ var ability_dict = {
 		weight: (card, ai, max) => ai.weightScorchRow(card, max, "ranged")
 	},
 	emhyr_imperial: {
-		description: "Pick a Torrential Rain card from your deck and play it instantly.",
+		description: "Возьмите карту Дождя из вашей колоды и сыграйте её немедленно.",
 		activated: async card => {
 			let out = card.holder.deck.findCard(c => c.name === "Torrential Rain");
 			if (out) await out.autoplay(card.holder.deck);
