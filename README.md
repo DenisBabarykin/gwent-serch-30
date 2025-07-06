@@ -1,5 +1,5 @@
 # Юмористическая версия игры в Гвинт, посвященная юбилею моего друга Серёги
-![cover](https://user-images.githubusercontent.com/26311830/116256903-f1599b00-a7b6-11eb-84a1-16dcb5c9bfc6.jpg)
+![cover](https://raw.githubusercontent.com/DenisBabarykin/gwent-serch-30/50044633afc8a52ae3b6c52ad5f813330b941ae4/title.jpg)
 
 Нажать [сюда](https://denisbabarykin.github.io/gwent-serch-30/) чтобы играть. Полная совместимость с браузером Google-chrome, но на всякий случай лучше выключить расширения по типу ад-блока. Чтобы играла музыка из оригинального гвинта, на компьютере должен работать доступ к youtube.
 
