@@ -88,7 +88,7 @@ var ability_dict = {
 	},
 	agile: {
 		name:"Agile", 
-		description: "Can be placed in either the Close Combat or the Ranged Combat row. Cannot be moved once placed. "
+		description: "Может быть размещен как в ближнем, так и в дальнобойном ряду"
 	},
 	muster: {
 		name:"Muster", 
