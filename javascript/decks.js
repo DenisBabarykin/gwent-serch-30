@@ -7,7 +7,7 @@ var custom_decks = [
 		"cards": [
 			["spe_horn", 2],
 			["spe_decoy", 1],
-			["spe_fog", 1],
+			["spe_frost", 2],
 			["spe_clear", 3],
 			["spe_scorch", 1],
 			["nr_stennis", 1],
@@ -41,7 +41,7 @@ var custom_decks = [
 		"cards": [
 			["spe_rain", 2],
 			["spe_horn", 2],
-			["spe_clear", 2],
+			["spe_clear", 1],
 			["spe_scorch", 1],
 			["ne_impera_brigade_1", 1],
 			["ne_impera_brigade_2", 1],
