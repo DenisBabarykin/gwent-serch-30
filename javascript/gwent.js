@@ -1889,7 +1889,7 @@ class Game {
 		if (player_me.controller instanceof ControllerAI) {
 			for (let i = 0; i < 2; i++) player_me.controller.redraw();
 		} else {
-			await ui.queueCarousel(player_me.hand, 2, async (c, i) => await player_me.deck.swap(c, c.removeCard(i)), c => true, true, true, "Выбери 2 карты для замены");
+			await ui.queueCarousel(player_me.hand, 2, async (c, i) => await player_me.deck.swap(c, c.removeCard(i)), c => true, true, true, "Choose up to 2 cards to redraw");
 			ui.enablePlayer(false);
 		}
 		game.startRound();
